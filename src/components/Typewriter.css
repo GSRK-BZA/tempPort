@@ -1,0 +1,16 @@
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: black;
+    animation: blink 0.7s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  .typewriter {
+    /* background-color: aqua; */
+    margin-top:100px; 
+  }

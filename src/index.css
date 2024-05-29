@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+html, body, #root, .App {
+  height: 100%;
+  width: 100%;
+}
+.container{
+  background-color: black;
+}
+.nav {
+  background-color: #f8f9fa; 
+  padding: 10px 20px;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: 0; */
+}
+
+.Ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.Li {
+  margin: 0;
+}
+
+.Li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.Li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  animation: underline 0.3s ease-out forwards;
+}
+
+.Li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s;
+}
+
+.Li a:hover::after {
+  width: 100%;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.Li a .svg-inline--fa {
+  margin-right: 8px; /* Space between icon and text */
+}
