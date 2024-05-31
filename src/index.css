@@ -87,3 +87,8 @@ html, body, #root, .App {
 .Li a .svg-inline--fa {
   margin-right: 8px; /* Space between icon and text */
 }
+.tiles{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

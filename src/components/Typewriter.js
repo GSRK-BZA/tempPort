@@ -15,10 +15,10 @@ const Typewriter = ({heading}) => {
 
       setCurrentHeading(isDeleting ? fullText.substring(0, currentHeading.length - 1) : fullText.substring(0, currentHeading.length + 1));
 
-      setTypingSpeed(isDeleting ? 30 : 150);
+      setTypingSpeed(isDeleting ? 30 : 250);
 
       if (!isDeleting && currentHeading === fullText) {
-        setTimeout(() => setIsDeleting(true), 500);
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && currentHeading === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);

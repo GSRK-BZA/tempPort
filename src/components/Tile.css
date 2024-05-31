@@ -1,0 +1,33 @@
+.tile {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  .img-parent {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* for an aspect ratio of 16:9 */
+    overflow: hidden;
+  }
+  
+  .img-parent img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  
+  .text a {
+    color: blue;
+    text-decoration: none;
+  }
